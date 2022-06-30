@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{titulo}}</title>
+</head>
+<body>
+    <form action="/atualizar.html" method="POST">
+        <label> Código: </label>
+        <input type="number" min="1" name="tCodigo" maxlength="5" />
+        <br><br>
+        <label> Campo: </label>
+        <input type="text" name="tCampo" placeholder="Nome"/>
+        <br><br>
+        <label> Novo Dado: </label>
+        <input type="text" name="tNovoDado" placeholder="2022-02-29"/>
+        <br><br>
+        <button type="submit"> Atualizar </button>
+    </form>
+    <h6>{{ resultado }}</h6>
+</body>
+</html>
